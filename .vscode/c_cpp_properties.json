@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "E:/Qt/5.12.2/mingw73_64/include",
+                "E:/Qt/5.12.2/mingw73_64/include/QtCore",
+                "E:/Qt/5.12.2/mingw73_64/include/QtGui",
+                "E:/Qt/5.12.2/mingw73_64/include/QtWidgets",
+                "E:/Qt/5.12.2/mingw73_64/include/QtOpenGL",
+                "E:/Qt/5.12.2/mingw73_64/mkspecs/win32-g++",
+                "E:/OpenCV/opencv/OpenCV_build/install/include",
+                "E:/OpenCV/opencv/OpenCV_build/install/include/opencv2",
+                "E:/dlib-20.0"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE", 
+                "QT_CORE_LIB",
+                "QT_GUI_LIB",
+                "QT_WIDGETS_LIB",
+                "QT_DEPRECATED_WARNINGS",
+                "WIN32",
+                "_WIN32"
+            ],
+            "windowsSdkVersion": "10.0.22000.0",
+            "compilerPath": "E:/Qt/Tools/mingw730_64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17", 
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
