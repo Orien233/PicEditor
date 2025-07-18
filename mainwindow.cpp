@@ -29,14 +29,17 @@ MainWindow::MainWindow(QWidget *parent) : //构造函数
 
     ui->setupUi(this);
 
-    // 设置窗口大小为屏幕的80%
+    // 获取屏幕的大小
     QDesktopWidget* desktop = QApplication::desktop();
     QRect screenGeometry = desktop->screenGeometry();
     int screenWidth = screenGeometry.width();
     int screenHeight = screenGeometry.height();
-    setMinimumSize(800, 600); // 设置最小窗口大小
-    resize(screenWidth * 0.8, screenHeight * 0.8);// 设置窗口大小为屏幕的80%
-    setWindowTitle("PicEditor"); // 设置窗口标题
+
+    setMinimumSize(800, 600);    // 设置最小窗口大小
+    resize(screenWidth * 0.8, screenHeight * 0.8);  // 设置窗口大小为屏幕的80%
+    setWindowTitle("PicEditor");  // 设置窗口标题
+    move((screenWidth - width()) / 2, (screenHeight - height()) / 2);  // 设置窗口居中显示
+    centralWidget()->updateGeometry();  // 确保布局正确更新
 
     // 设置按钮和滑动条的初始状态
     isGrayscaleApplied = false;
